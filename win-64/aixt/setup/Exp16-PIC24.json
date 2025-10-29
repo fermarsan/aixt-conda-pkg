@@ -1,0 +1,20 @@
+{
+    "port": "Exp16-PIC24",
+    "board": "Explorer 16",
+    "backend": "c",
+    "cc_linux": "",
+    "cc_windows": "",
+    "cc_make_flags": "",
+    "flasher_linux": "",
+    "flasher_windows": "",
+    "flasher_flags": "",
+    "api_paths": [
+        "Microchip/Explorer16/PIC24",
+        "Microchip/xc16-generic",
+        "Microchip/PIC24F-dsPIC33-generic"
+    ],
+    "v_defines": [],
+    "default_cpu_freq": 16000000,
+    "default_string_len": 40,
+    "compiler_setup_path": "setup/xc16.json"
+}

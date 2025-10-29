@@ -1,0 +1,9 @@
+{
+  "file_types": {
+    "V": ["v"],
+    "C": ["ino", "nxc"],
+    "XML": ["sim1"], // SimulIDE schematics
+    "TOML": ["syntax"],
+    "JSONC": ["code-snippets"] // vscode code snippets
+  }
+}

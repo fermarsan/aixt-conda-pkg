@@ -1,0 +1,19 @@
+package:
+  name: aixt
+  version: "0.2.3"
+
+source:
+  path: .
+
+build:
+  number: 0
+
+test:
+  commands:
+    - aixt --version
+
+about:
+  home: "https://github.com/fermarsan/aixt"
+  license: "MIT"
+  license_file: LICENSE
+  summary: "V-based Programming Framework for Microcontrollers"

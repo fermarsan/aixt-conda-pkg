@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/Blue-Pill-blinking.ino.hex'
+elf = 'build/Blue-Pill-blinking.ino.elf'

@@ -1,0 +1,4 @@
+## How to contribute?
+The `V` to `C` transpiler performs general equivalences between both languages, but the specific features of each microcontroller and `C` compiler such as oscillation frequency and types equivalences, must be recorded in a setup file in `.json` format. The main idea of using those setup files (`port_name.json` and `compiler_name.jason`) is to facilitate contributions (appending a new device or board) by simplifying the knowledge required by the contributor. Each contributor has to code the API functions for the specific `C` compiler and also the setup file (for the device or the `C` compiler).
+
+Anyways, you can contribute in any other part of the Aixt project, all your contributions will be well received.
