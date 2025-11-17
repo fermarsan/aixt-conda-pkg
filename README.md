@@ -24,8 +24,14 @@ conda install conda-build
 
 Then, run the build command from the root of this directory:
 
+#### On Linux:
 ```bash
-conda build .
+conda build --source . --output-folder .\build
+```
+
+#### On Windows:
+```bash
+conda build . --output-folder .\build
 ```
 
 This will create the `Aixt` package in your local conda channel.
