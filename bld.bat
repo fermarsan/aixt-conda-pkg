@@ -10,4 +10,4 @@ xcopy win-64\aixt\src %PREFIX%\aixt\src /E /I
 xcopy win-64\aixt\targets %PREFIX%\aixt\targets /E /I
 xcopy win-64\aixt\templates %PREFIX%\aixt\templates /E /I
 
-echo @"%PREFIX%\aixt\aixt.exe" %* > %PREFIX%\bin\aixt.bat
+mklink %PREFIX%/aixt/aixt.exe %PREFIX%/bin/aixt.exe
