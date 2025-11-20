@@ -1,4 +1,0 @@
-[wokwi]
-version = 1
-firmware = 'build/STM32F411Core-blinking.ino.hex'
-elf = 'build/STM32F411Core-blinking.ino.elf'
