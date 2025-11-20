@@ -2,7 +2,6 @@ mkdir %PREFIX%\bin
 mkdir %PREFIX%\aixt
 
 xcopy win-64\aixt\aixt.exe %PREFIX%\aixt /E /I
-xcopy win-64\aixt\assets %PREFIX%\aixt\assets /E /I
 xcopy win-64\aixt\docs %PREFIX%\aixt\docs /E /I
 xcopy win-64\aixt\lib %PREFIX%\aixt\lib /E /I
 xcopy win-64\aixt\setup %PREFIX%\aixt\setup /E /I
