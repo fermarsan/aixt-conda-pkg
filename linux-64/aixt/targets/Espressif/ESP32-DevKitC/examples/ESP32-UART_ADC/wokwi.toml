@@ -1,4 +1,0 @@
-[wokwi]
-version = 1
-firmware = 'build/ESP32-UART_ADC.ino.bin'
-elf = 'build/ESP32-UART_ADC.ino.elf'

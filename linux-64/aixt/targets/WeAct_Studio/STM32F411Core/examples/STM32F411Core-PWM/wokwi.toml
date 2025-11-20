@@ -1,4 +1,0 @@
-[wokwi]
-version = 1
-firmware = 'build/STM32F411CorePWM.ino.hex'
-elf = 'build/STM32F411CorePWM.ino.elf'
