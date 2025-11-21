@@ -26,7 +26,7 @@ Then, run the build command from the root of this directory:
 
 #### On Linux:
 ```bash
-conda build --source . --output-folder .\build
+conda build . --output-folder build
 ```
 
 #### On Windows:
