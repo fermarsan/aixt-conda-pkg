@@ -65,3 +65,4 @@ aixt -h
 - `bld.bat`: The build script for Windows.
 - `linux-64/`: Contains the pre-compiled `aixt` binary for Linux.
 - `win-64/`: Contains the pre-compiled `aixt.exe` binary for Windows.
+- `noarch/`: Contains the rest of Aixt necessary data.

@@ -1,6 +1,6 @@
 package:
   name: aixt
-  version: "0.2.3"
+  version: "0.3"
 
 source:
   path: .
@@ -10,7 +10,7 @@ build:
 
 test:
   commands:
-    - aixt --version
+    - aixt version
 
 about:
   home: "https://github.com/fermarsan/aixt"

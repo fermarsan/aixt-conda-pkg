@@ -1,11 +1,12 @@
 mkdir %PREFIX%\bin
 mkdir %PREFIX%\aixt
 
-xcopy win-64\aixt\aixt.exe %PREFIX%\aixt /E /I
-xcopy win-64\aixt\lib %PREFIX%\aixt\lib /E /I
-xcopy win-64\aixt\setup %PREFIX%\aixt\setup /E /I
-xcopy win-64\aixt\src %PREFIX%\aixt\src /E /I
-xcopy win-64\aixt\targets %PREFIX%\aixt\targets /E /I
-xcopy win-64\aixt\templates %PREFIX%\aixt\templates /E /I
+xcopy win-64\aixt.exe %PREFIX%\aixt /E /I
+xcopy noarch\api %PREFIX%\aixt\api /E /I
+xcopy noarch\docs %PREFIX%\aixt\docs /E /I
+xcopy noarch\lib %PREFIX%\aixt\lib /E /I
+xcopy noarch\setup %PREFIX%\aixt\setup /E /I
+xcopy noarch\src %PREFIX%\aixt\src /E /I
+xcopy noarch\templates %PREFIX%\aixt\templates /E /I
 
 echo "%PREFIX%\aixt\aixt.exe" %%* > %PREFIX%\bin\aixt.bat
