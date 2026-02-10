@@ -1,0 +1,28 @@
+{
+  "target": "pic16f6xx_18p",
+  "board": "---",
+  "backend": "c",
+  "cc": {
+    "name": "xc8",
+    "path": "",
+    "args": "PART=@{device}"
+  },
+  "flasher": {
+    "name": "MPLAB IPE",
+    "path": "",
+    "args": ""
+  },
+  "api_paths": [
+    "microchip/pic16f6xx_18p",
+    "microchip/xc8",
+    "microchip/pic16",
+    "microchip/pic16_timer1",
+    "microchip/pic16_timer2",
+    "microchip/pic16_pwm",
+    "microchip/pic16_uart"
+  ],
+  "v_defines": [],
+  "default_cpu_freq": 20000000,
+  "default_string_len": 20,
+  "compiler_setup_path": "setup/xc8.json"
+}

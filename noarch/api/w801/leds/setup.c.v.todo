@@ -1,0 +1,16 @@
+//
+// _Authors:_ Fernando M. Santa
+// Date: 2025
+//
+// ## Description
+// Builtin LEDs
+module leds
+
+import pin
+
+// setup builtin LEDs as output
+pub fn setup() {
+	for led in led_array {
+		pin.setup(led, pin.output)
+	}
+}

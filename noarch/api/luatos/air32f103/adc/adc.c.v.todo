@@ -1,0 +1,13 @@
+// Authors:
+//	 - Julian Camilo Guzmán Zambrano
+//	 - Juan Pablo Gonzalez Penagos
+//	 - Fernando M. Santa
+// Date: 2022-2024
+//
+// ## Description
+// ADC functions (Blue Pill_AIR32F103C)
+
+module adc
+
+
+// TODO: analog pinsdefining

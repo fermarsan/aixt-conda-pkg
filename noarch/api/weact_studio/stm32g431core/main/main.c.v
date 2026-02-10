@@ -1,0 +1,6 @@
+// Author: Fernando M. Santa
+// Date: 2022-2025
+//
+// ## Description
+// Builtin definitions (STM32G431Core port)
+module main

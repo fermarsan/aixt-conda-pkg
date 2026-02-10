@@ -1,0 +1,24 @@
+{
+  "target": "pic12f6xx",
+  "board": "---",
+  "backend": "c",
+  "cc": {
+    "name": "xc8",
+    "path": "",
+    "args": "PART=@{device}"
+  },
+  "flasher": {
+    "name": "MPLAB IPE",
+    "path": "",
+    "args": ""
+  },
+  "api_paths": [
+    "microchip/pic12f6xx",
+    "microchip/xc8",
+    "microchip/pic12"
+  ],
+  "v_defines": [],
+  "default_cpu_freq": 4000000,
+  "default_string_len": 20,
+  "compiler_setup_path": "setup/xc8.json"
+}

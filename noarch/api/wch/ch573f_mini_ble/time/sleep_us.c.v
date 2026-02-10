@@ -1,0 +1,9 @@
+// Author: Cristian Garzón
+// Date: 2023 - 2024
+// ## Description
+// TIME functions (WCH-CH573F)
+
+module time
+
+#define time.sleep_us(TIME)    DelayUs(TIME)
+

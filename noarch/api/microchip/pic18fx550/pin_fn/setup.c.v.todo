@@ -1,0 +1,12 @@
+// Author: Andrés Felipe Fajardo Duarte and Fernando M. Santa
+// Date: 2024
+//
+// ## Description
+// PIN management functions  (PIC18F2550 port)
+
+module pin_fn
+
+@[inline]
+pub fn setup(id u8, mode u8) {
+	C.PIN_NAME //## _s = PIN_MODE    // pin.setup(pin.b0_s, out);  -->  b0_s = out; --> TRISBbits.RB0 = 0;
+}

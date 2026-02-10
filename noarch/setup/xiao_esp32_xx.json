@@ -1,0 +1,26 @@
+{
+  "target": "xiao_esp32_xx",
+  "board": "Seeed Studio XIAO ESP32-xx",
+  "backend": "arduino",
+  "cc": {
+    "name": "arduino_cli",
+    "path": "arduino-cli",
+    "args": "compile -b esp32:esp32:XIAO_ESP32C3 -v --output-dir @{file_dir_name}/build"
+  },
+  "flasher": {
+    "name": "arduino_cli",
+    "path": "arduino-cli",
+    "args": "upload @{file_dir_name} -p @{port} -b esp32:esp32:XIAO_ESP32C3"
+  },
+  "api_paths": [
+    "seeed-studio/xiao_esp32_xx",
+    "arduino/esp32",
+    "arduino/core",
+    "arduino/uart",
+    "arduino/i2c"
+  ],
+  "v_defines": [],
+  "default_cpu_freq": 48000000,
+  "default_string_len": 50,
+  "compiler_setup_path": "setup/arduino32.json"
+}

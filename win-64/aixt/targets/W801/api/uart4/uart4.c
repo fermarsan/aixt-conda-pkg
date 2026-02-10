@@ -1,1 +1,0 @@
-#define SERIAL4_PINS(tx, rx)        uart1 Serial4(tx, rx, 0, 0)

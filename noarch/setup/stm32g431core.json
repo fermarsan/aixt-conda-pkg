@@ -1,0 +1,25 @@
+{
+  "target": "stm32g431core",
+  "board": "STM32G431CoreBoard",
+  "backend": "arduino",
+  "cc": {
+    "name": "arduino_cli",
+    "path": "arduino-cli",
+    "args": "compile -b STMicroelectronics:stm32:GenG4:pnum=GENERIC_G431C6UX -v --output-dir @{file_dir_name}/build"
+  },
+  "flasher": {
+    "name": "arduino_cli",
+    "path": "arduino-cli",
+    "args": "upload @{file_dir_name} -p @{port} -b STMicroelectronics:stm32:GenG4:pnum=GENERIC_G431C6UX"
+  },
+  "api_paths": [
+    "weact_studio/stm32g431core",
+    "arduino/core",
+    "arduino/uart",
+    "arduino/i2c"
+  ],
+  "v_defines": [],
+  "default_cpu_freq": 170000000,
+  "default_string_len": 50,
+  "compiler_setup_path": "setup/arduino32.json"
+}

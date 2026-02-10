@@ -1,0 +1,25 @@
+{
+  "target": "air32f103",
+  "board": "AIR32F103",
+  "backend": "arduino",
+  "cc": {
+    "name": "arduino_cli",
+    "path": "arduino-cli",
+    "args": "compile -b STMicroelectronics:stm32:Blues -v --output-dir @{file_dir_name}/build"
+  },
+  "flasher": {
+    "name": "arduino_cli",
+    "path": "arduino-cli",
+    "args": "upload @{file_dir_name} -p @{port} -b STMicroelectronics:stm32:Blues"
+  },
+  "api_paths": [
+    "luatos/air32f103",
+    "arduino/core",
+    "arduino/uart",
+    "arduino/i2c"
+  ],
+  "v_defines": [],
+  "default_cpu_freq": 72000000,
+  "default_string_len": 50,
+  "compiler_setup_path": "setup/arduino32.json"
+}

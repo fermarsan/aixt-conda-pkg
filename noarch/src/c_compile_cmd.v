@@ -1,0 +1,69 @@
+// Author: Fernando M. Santa
+// Date: 2025-2026
+// ## Description
+module main
+
+// Aixt transpiler
+import cli
+import os
+// import v.vmod
+import aixt.setup
+
+// c_compile_cmd is called after command `aixt c_compile [flags] source_file`
+fn c_compile_cmd(cmd cli.Command) ! {
+	input_name := os.abs_path(cmd.args[0])		// and source path input
+	path := os.dir(input_name)
+	base_name := input_name.replace('.v', '') 	// input file base name
+
+	v_mod := aixt_vmod_load(path)
+
+	mut target := ''
+	if cmd.flags.get_string('target')! != '' {	// target name
+		target = cmd.flags.get_string('target')!
+	} else if v_mod.unknown['target'][0] != '' {
+		target = v_mod.unknown['target'][0]
+	} else {
+		panic('A target name has to be specified as a flag or inside the `v.mod` file.')
+	}
+	mut project_setup := setup.Setup{}
+	project_setup.load(target)
+
+	cc := if cmd.flags.get_string('c_compiler')! != '' {	// as a flag
+		cmd.flags.get_string('c_compiler')!
+	} else if v_mod.unknown['cc'][0] != '' {	// inside `v.mod`
+		v_mod.unknown['cc'][0]
+	} else {	// inside `setup/<target_name>.json`
+		$if windows {
+			if project_setup.cc['windows_path'] != '' {
+				project_setup.cc['windows_path']
+			} else if project_setup.cc['path'] != ''{
+				project_setup.cc['path']
+			} else {
+				''
+			}
+		} $else {
+			if project_setup.cc['path'] != ''{
+				project_setup.cc['path']
+			} else {
+				''
+			}
+		}
+	}
+
+	cc_args := if cmd.flags.get_string('cc_args')! != '' {	// C compiler args
+		cmd.flags.get_string('cc_args')!
+	} else if v_mod.unknown['cc'][1] != '' {
+		v_mod.unknown['cc'][1]
+	} else {
+		project_setup.cc['args']
+	}
+
+	println('Aixt path:\n\t${os.executable()}\n')
+	c_compile(base_name, cc, cc_args, project_setup)
+	ext := match project_setup.backend {
+		'nxc' { 'nxc' }
+		'arduino' { 'ino' }
+		else { 'c' }		
+	}
+	println('\n${base_name}.${ext} compiling finished.\n')
+}

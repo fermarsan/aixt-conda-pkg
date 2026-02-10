@@ -49,7 +49,7 @@ conda install -c local aixt
 After installation, you can use the transpiler with the `aixt` command:
 
 ```bash
-aixt <command> <device_or_board> <source_file>
+aixt <command> -t <device_or_board> <source_file>
 ```
 
 To see all available compiler options, you can use the help command:

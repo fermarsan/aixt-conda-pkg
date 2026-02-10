@@ -1,0 +1,14 @@
+// Author: Fernando M. Santa
+// Date: 2024
+//
+// ## Description
+// ADC functions Arduinio Uno
+module adc
+
+
+@[as_macro] pub const ch0 = 14
+@[as_macro] pub const ch1 = 15
+@[as_macro] pub const ch2 = 16
+@[as_macro] pub const ch3 = 17
+@[as_macro] pub const ch4 = 18
+@[as_macro] pub const ch5 = 19

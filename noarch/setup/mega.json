@@ -1,0 +1,26 @@
+{
+  "target": "mega",
+  "board": "Arduino Mega",
+  "backend": "arduino",
+  "cc": {
+    "name": "arduino_cli",
+    "path": "arduino-cli",
+    "args": "compile -b arduino:avr:mega -v --output-dir @{file_dir_name}/build"
+  },
+  "flasher": {
+    "name": "arduino_cli",
+    "path": "arduino-cli",
+    "args": "upload @{file_dir_name} -p @{port} -b arduino:avr:mega"
+  },
+  "api_paths": [
+    "arduino/mega",
+    "arduino/avr",
+    "arduino/core",
+    "arduino/uart",
+    "arduino/i2c"
+  ],
+  "v_defines": [],
+  "default_cpu_freq": 16000000,
+  "default_string_len": 50,
+  "compiler_setup_path": "setup/arduino8.json"
+}

@@ -1,0 +1,22 @@
+{
+    "target": "ch582f_mini_ble",
+    "board": "CH582F-mini-BLE",
+    "backend": "c",
+    "cc": {
+        "name": "MounRiver",
+        "path": "",
+        "args": ""
+    },
+    "flasher": {
+        "name": "MounRiver",
+        "path": "",
+        "args": ""
+    },
+    "api_paths": [
+        "WCH/CH582F_mini_BLE"
+    ],
+    "v_defines": [],
+    "default_cpu_freq": 4000000,
+    "default_string_len": 80,
+    "compiler_setup_path": "setup/MounRiver.json"
+}

@@ -1,0 +1,12 @@
+// Author: Jan Carlo Peñuela Jurado and Fernando M. Santa
+// Date: 2024
+//
+// ## Description
+// TIME function
+//              (PIC18F452)
+
+
+module time
+
+#include <xc.h>
+

@@ -1,0 +1,11 @@
+// Author: Fernando M. Santa
+// Date: 2025
+//
+// ## Description
+// adc functions (CY8CKIT-049-42XX)
+module adc
+
+@[as_macro]
+pub fn setup() {
+	C.capsense_ADC_Start()
+}

@@ -1,0 +1,22 @@
+{
+  "target": "pic18f452",
+  "board": "---",
+  "backend": "c",
+  "cc": {
+    "name": "xc8",
+    "path": "",
+    "args": "PART=@{device}"
+  },
+  "flasher": {
+    "name": "MPLAB IPE",
+    "path": "",
+    "args": ""
+  },
+  "api_paths": [
+    "microchip/"
+  ],
+  "v_defines": [],
+  "default_cpu_freq": 20000000,
+  "default_string_len": 20,
+  "compiler_setup_path": "setup/xc8.json"
+}

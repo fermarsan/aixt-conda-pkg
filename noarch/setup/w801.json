@@ -1,0 +1,28 @@
+{
+  "target": "w801",
+  "board": "W801",
+  "backend": "arduino",
+  "cc": {
+    "name": "arduino_cli",
+    "path": "arduino-cli",
+    "args": "compile -b w80x_duino:XT804:w801 -v --output-dir ./build "
+  },
+  "flasher": {
+    "name": "arduino_cli",
+    "path": "arduino-cli",
+    "args": "upload @{file_dir_name} -p @{port} -b w80x_duino:XT804:w801"
+  },
+  "api_paths": [
+    "w801",
+    "arduino/core",
+    "arduino/arduino_uart1",
+    "arduino/arduino_uart2",
+    "arduino/arduino_uart3",
+    "arduino/arduino_uart4",
+    "arduino/arduino_uart5"
+  ],
+  "v_defines": [],
+  "default_cpu_freq": 4000000,
+  "default_string_len": 50,
+  "compiler_setup_path": "setup/arduino32.json"
+}

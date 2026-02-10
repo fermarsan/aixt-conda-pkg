@@ -1,0 +1,24 @@
+{
+  "target": "exp16_pic24",
+  "board": "Explorer 16",
+  "backend": "c",
+  "cc": {
+    "name": "xc16",
+    "path": "",
+    "args": "PART=@{device}"
+  },
+  "flasher": {
+    "name": "MPLAB IPE",
+    "path": "",
+    "args": ""
+  },
+  "api_paths": [
+    "microchip/exp16_pic24",
+    "microchip/xc16",
+    "microchip/pic24f"
+  ],
+  "v_defines": [],
+  "default_cpu_freq": 16000000,
+  "default_string_len": 40,
+  "compiler_setup_path": "setup/xc16.json"
+}

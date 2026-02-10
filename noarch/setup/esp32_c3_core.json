@@ -1,0 +1,26 @@
+{
+  "target": "esp32_c3_core",
+  "board": "ESP32 C3 Core",
+  "backend": "arduino",
+  "cc": {
+    "name": "arduino_cli",
+    "path": "arduino-cli",
+    "args": "compile -b esp32:esp32:AirM2M_CORE_ESP32C3 -v --output-dir @{file_dir_name}/build"
+  },
+  "flasher": {
+    "name": "arduino_cli",
+    "path": "arduino-cli",
+    "args": "upload @{file_dir_name} -p @{port} -b esp32:esp32:AirM2M_CORE_ESP32C3"
+  },
+  "api_paths": [
+    "luatos/esp32_c3_core",
+    "arduino/esp32",
+    "arduino/core",
+    "arduino/uart",
+    "arduino/i2c"
+  ],
+  "v_defines": [],
+  "default_cpu_freq": 16000000,
+  "default_string_len": 50,
+  "compiler_setup_path": "setup/arduino8.json"
+}

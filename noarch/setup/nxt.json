@@ -1,0 +1,22 @@
+{
+  "target": "nxt",
+  "board": "LEGO Mindstorms NXT intelligent brick",
+  "backend": "nxc",
+  "cc": {
+    "name": "nbc",
+    "path": "nbc",
+    "args": " -T:NXT -S:usb -d @{file_no_extension}.nxc"
+  },
+  "flasher": {
+    "name": "nbc",
+    "path": "nbc",
+    "args": " -T:NXT -S:usb -d @{file_no_extension}.nxc"
+  },
+  "api_paths": [
+    "nxt"
+  ],
+  "v_defines": [],
+  "default_cpu_freq": 4000000,
+  "default_string_len": 80,
+  "compiler_setup_path": "setup/nxc.json"
+}
